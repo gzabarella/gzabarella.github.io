@@ -200,6 +200,9 @@ div.back-menu {
   color: #9a9a9a;
   letter-spacing: 2px;
 }
+div.back-menu.mobile-back-menu {
+  display: none;
+}
 @media screen and (max-width: 1280px) {
   body {
     font-size: 14px;
@@ -242,8 +245,11 @@ div.back-menu {
     width: calc(100% - 20px);
     min-height: 0;
   }
-  .statement,
-  .content {
+  .container .content {
+    padding-top: 50px;
+  }
+  .container .statement,
+  .container .content {
     width: 100%;
     max-width: none;
   }
@@ -266,6 +272,12 @@ div.back-menu {
     display: block;
   }
   .hamburger {
+    display: block;
+  }
+  div.back-menu {
+    padding: 15px 10px;
+  }
+  div.back-menu.mobile-back-menu {
     display: block;
   }
 }

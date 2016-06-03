@@ -176,6 +176,8 @@ div.back-menu
   margin 0
   color #9A9A9A
   letter-spacing 2px
+  &.mobile-back-menu
+    display none
 
 
 // media queries
@@ -212,9 +214,11 @@ div.back-menu
   .container
     width calc(100% - 20px)
     min-height 0
-  .statement, .content
-    width 100%
-    max-width none
+    .content
+      padding-top 50px
+    .statement, .content
+      width 100%
+      max-width none
   .project
     img:first-child
       margin-top 0
@@ -232,3 +236,7 @@ div.back-menu
       display block
   .hamburger
     display block
+  div.back-menu
+    padding 15px 10px
+    &.mobile-back-menu
+      display block
