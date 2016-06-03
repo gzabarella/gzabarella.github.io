@@ -94,6 +94,7 @@ img {
   right: 15px;
   height: 22px;
   pointer-events: all;
+  display: none;
 }
 .appearing {
   animation: appear 0.6s linear 4s 1 normal forwards;
@@ -261,7 +262,7 @@ div.back-menu.mobile-back-menu {
     top: 0;
     padding-top: 100px;
     animation: none;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.93);
     width: 100%;
     height: 100%;
   }
@@ -270,6 +271,12 @@ div.back-menu.mobile-back-menu {
   }
   .left-menu .close {
     display: block;
+  }
+  .left-menu p.menu {
+    margin: 0 0 8px 0;
+  }
+  .left-menu ul li {
+    margin-bottom: 11px;
   }
   .hamburger {
     display: block;
