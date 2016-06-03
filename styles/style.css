@@ -178,13 +178,13 @@ div.project p.link {
 }
 div.project audio {
   margin-top: 20px;
-  width: 70%;
-  max-width: 670px;
+  width: 670px;
+  max-width: 100%;
 }
 div.project .audio-centered {
   margin-top: 20px;
-  width: 70%;
-  max-width: 670px;
+  width: 670px;
+  max-width: 100%;
   margin: 0 auto;
 }
 div.back-menu {
