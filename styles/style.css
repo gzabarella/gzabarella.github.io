@@ -202,6 +202,11 @@ div.back-menu {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 500px) {
+  .container {
+    width: calc(100% - 20px);
+  }
+}
 @-moz-keyframes appear {
   0% {
     opacity: 0;

@@ -70,7 +70,8 @@ img
   opacity 0
 
 .statement
-  width 500px
+  width 100%
+  max-width 500px
   display block
   margin 0 auto
   text-align center
@@ -88,7 +89,8 @@ img
     width 100%
 
 .content
-  width 500px
+  width 100%
+  max-width 500px
   display block
   margin 0 auto
   padding-top 100px
@@ -111,8 +113,7 @@ div.project
       width 100%
     &.small
       float left
-      width calc( (960px - 50px) / 2)
-      // width 45%
+      width calc( (100% - 50px) / 2)
       &:first-child
         margin-right 50px
     &.vert
@@ -153,7 +154,8 @@ div.back-menu
   body
     font-size 14px
   .statement, .content
-    width 400px
+    width 100%
+    max-width 400px
     font-size 12px
   .left-menu
     padding-left 30px
@@ -167,10 +169,19 @@ div.back-menu
   body
     font-size 18px
   .statement, .content
-    width 600px
+    width 100%
+    max-width 600px
     font-size 16px
   .left-menu
     p.menu
       font-size 14px
     ul
       font-size 18px
+
+// mobile
+@media screen and (max-width: 500px)
+  .container
+    width calc(100% - 20px)
+  .statement, .content
+    width 100%
+    max-width none
