@@ -1,0 +1,170 @@
+body
+  // font-family "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif
+  font-family Helvetica, sans-serif
+  font-weight lighter
+  font-size 16px
+  background white
+  color #2B2B2B
+  height 100vh
+
+.container
+  width 960px
+  margin 0 auto
+  position relative
+  height 100vh
+  min-height 700px
+
+@keyframes appear {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+@-moz-keyframes appear {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+@-webkit-keyframes appear {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+a
+  text-decoration none
+  color inherit
+
+img
+  pointer-events none
+
+.left-menu
+  font-family Tahoma, Verdana, Segoe, sans-serif
+  position absolute
+  width 400px
+  height calc( 100% - 100px )
+  top 100px
+  left 0
+  padding-left 40px
+  z-index 100
+  p.menu
+    font-size 12px
+    margin 0 0 3px 0
+    color #9A9A9A
+    letter-spacing 2px
+    &.active
+      text-decoration underline
+  ul
+    font-size 14px
+    margin 0
+    font-weight bold
+    letter-spacing 1px
+    list-style none
+    padding-left 0
+    margin-bottom 30px
+    li
+      margin-bottom 6px
+
+.appearing
+  animation appear .6s linear 4s 1 normal forwards
+  -moz-animation appear .6s linear 4s 1 normal forwards
+  -webkit-animation appear .6s linear 4s 1 normal forwards
+  opacity 0
+
+.statement
+  width 500px
+  display block
+  margin 0 auto
+  text-align center
+  position relative
+  top 50%
+  transform translateY(-50%)
+  -moz-transform translateY(-50%)
+  -webkit-transform translateY(-50%)
+  p
+    text-align left
+    &#author
+      text-align right
+  img
+    margin-top 10px
+    width 100%
+
+.content
+  width 500px
+  display block
+  margin 0 auto
+  margin-top 100px
+
+// project.html
+div.project
+  -webkit-touch-callout none
+  -webkit-user-select none
+  -khtml-user-select none
+  -moz-user-select none
+  -ms-user-select none
+  user-select none
+  padding 50px 0
+  min-height 100vh
+  div.row
+    margin-top 10px
+  img, iframe
+    margin-top 50px
+    &.large
+      width 100%
+    &.small
+      float left
+      width calc( (960px - 50px) / 2)
+      // width 45%
+      &:first-child
+        margin-right 50px
+  label
+    padding-top 3px
+    display block
+  p.link
+    margin-top 30px
+  audio
+    margin-top 20px
+    width 670px
+  .audio-centered
+    margin-top 20px
+    width 670px
+    margin 0 auto
+
+div.back-menu
+  position fixed
+  top 0
+  left 0
+  padding 15px 30px
+  width 100%
+  background white
+  z-index 100
+  font-family Tahoma, Verdana, Segoe, sans-serif
+  font-size 12px
+  margin 0
+  color #9A9A9A
+  letter-spacing 2px
+
+
+// media queries
+@media screen and (max-width: 1280px)
+  body
+    font-size 14px
+  .statement, .content
+    width 400px
+    font-size 12px
+  .left-menu
+    p.menu
+      font-size 10px
+    ul
+      font-size 12px
+
+
+@media screen and (min-width: 2600px)
+  body
+    font-size 18px
+  .statement, .content
+    width 600px
+    font-size 16px
+  .left-menu
+    p.menu
+      font-size 14px
+    ul
+      font-size 18px

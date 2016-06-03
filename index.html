@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./favicon.ico">
+
+        <link rel="stylesheet" href="styles/normalize.min.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            if( window.location.hash == "#nav" ) {
+              document.getElementById("menu").className = "left-menu";
+            }
+            else {
+              window.setTimeout( function() {
+                window.location.hash = "#nav";
+              }, 4600);
+            }
+          });
+        </script>
+    </head>
+    <body>
+      <div id="menu" class="left-menu appearing">
+        <p id="projects" class="menu active">
+          Projects
+        </p>
+        <ul>
+          <li><a href="projects/architectonique.html">L’architectonique du sens</a></li>
+          <li><a href="projects/profile.html">Il profilo (im)mobile delle cose</a></li>
+          <li><a href="projects/geography.html">Ogni geografia possibile</a></li>
+          <li><a href="projects/tryptich.html">Tryptich (Tribute to J. Kosuth)</a></li>
+          <li><a href="projects/biography.html">Index of a biography</a></li>
+          <li><a href="projects/sketchbooks.html">Sketchbooks</a></li>
+          <li><a href="projects/algorithm.html">Algorithm of my life</a></li>
+        </ul>
+
+        <p id="about" class="menu">
+          <a href="about.html">About</a>
+        </p>
+        <p id="contacts" class="menu">
+          <a href="contacts.html">Contacts</a>
+        </p>
+      </div>
+      <div class="container">
+        <div class="statement">
+          <p>&laquo;Extension mobile, espacements, écartements géologiques et cosmologiques, dérives, sutures et fractures des archi-continents du sens, des plaques tectoniques immémoriales qui remuent sous nos pieds, sous notre histoire. Le corps est l’archi-tectonique du sens.</p>
+
+          <p>Discours inquiet, syntaxe casuelle, déclinaison d’occurrences. Clinamen, prose inclinée vers l’accident, fragile, fractale. Non le corps-animal du sens, mais l’aréalité des corps...</p>
+
+          <p>Un corps est une déflagration.&raquo;</p>
+          <p id="author">Jean-Luc Nancy</p>
+
+          <img src="images/19b.jpg" />
+
+        </div>
+      </div>
+    </body>
+</html>
