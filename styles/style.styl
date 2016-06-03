@@ -7,6 +7,9 @@ body
   color #2B2B2B
   height 100vh
 
+div
+  box-sizing border-box
+
 .container
   width calc(100% - 20px)
   max-width 960px
@@ -37,13 +40,29 @@ a
 img
   pointer-events none
 
+.hamburger
+  display none
+  width 100%
+  position fixed
+  top 0
+  left 0
+  padding 15px
+  background white
+  z-index 100
+  img
+    height 22px
+    float right
+    pointer-events all
+
 .left-menu
   font-family Tahoma, Verdana, Segoe, sans-serif
   position absolute
   width 400px
+  max-width 100%
   height calc( 100% - 100px )
-  top 100px
+  top 0
   left 0
+  padding-top 100px
   padding-left 40px
   z-index 100
   p.menu
@@ -63,6 +82,12 @@ img
     margin-bottom 30px
     li
       margin-bottom 6px
+  .close
+    position absolute
+    top 15px
+    right 15px
+    height 22px
+    pointer-events all
 
 .appearing
   animation appear .6s linear 4s 1 normal forwards
@@ -186,9 +211,24 @@ div.back-menu
 @media screen and (max-width: 500px)
   .container
     width calc(100% - 20px)
+    min-height 0
   .statement, .content
     width 100%
     max-width none
   .project
     img:first-child
       margin-top 0
+  .left-menu
+    display none
+    top 0
+    padding-top 100px
+    animation none
+    background-color rgba(255,255,255,0.9)
+    width 100%
+    height 100%
+    &.visible
+      display block
+    .close
+      display block
+  .hamburger
+    display block

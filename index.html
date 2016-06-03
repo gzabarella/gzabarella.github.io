@@ -20,22 +20,34 @@
                 window.location.hash = "#nav";
               }, 4600);
             }
+
+            var clickEvent = 'ontouchstart' in window ? 'touchend' : 'click';
+            document.getElementById("open-menu").addEventListener(clickEvent, function() {
+              document.getElementById("menu").className = "left-menu visible";
+            }, false);
+            document.getElementById("close-menu").addEventListener(clickEvent, function() {
+              document.getElementById("menu").className = "left-menu";
+            }, false);
           });
         </script>
     </head>
     <body>
+      <div class="hamburger">
+        <img src="/images/hamburger.svg" id="open-menu" />
+      </div>
       <div id="menu" class="left-menu appearing">
+        <img class="close" id="close-menu" src="/images/close.svg" />
         <p id="projects" class="menu active">
           Projects
         </p>
         <ul>
-          <li><a href="projects/architectonique-du-sens/">L’architectonique du sens</a></li>
-          <li><a href="projects/profilo-immobile-delle-cose/">Il profilo (im)mobile delle cose</a></li>
-          <li><a href="projects/ogni-geografia-possibile/">Ogni geografia possibile</a></li>
-          <li><a href="projects/tryptich/">Tryptich (Tribute to J. Kosuth)</a></li>
-          <li><a href="projects/index-of-a-biography/">Index of a biography</a></li>
-          <li><a href="projects/sketchbooks/">Sketchbooks</a></li>
-          <li><a href="projects/algorithm-of-my-life/">Algorithm of my life</a></li>
+          <li><a href="/projects/architectonique-du-sens/">L’architectonique du sens</a></li>
+          <li><a href="/projects/profilo-immobile-delle-cose/">Il profilo (im)mobile delle cose</a></li>
+          <li><a href="/projects/ogni-geografia-possibile/">Ogni geografia possibile</a></li>
+          <li><a href="/projects/tryptich/">Tryptich (Tribute to J. Kosuth)</a></li>
+          <li><a href="/projects/index-of-a-biography/">Index of a biography</a></li>
+          <li><a href="/projects/sketchbooks/">Sketchbooks</a></li>
+          <li><a href="/projects/algorithm-of-my-life/">Algorithm of my life</a></li>
         </ul>
 
         <p id="about" class="menu">
@@ -54,7 +66,7 @@
           <p>Un corps est une déflagration.&raquo;</p>
           <p id="author">Jean-Luc Nancy</p>
 
-          <img src="images/19b.jpg" />
+          <img src="/images/19b.jpg" />
 
         </div>
       </div>
