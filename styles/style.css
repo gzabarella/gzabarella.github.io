@@ -7,7 +7,8 @@ body {
   height: 100vh;
 }
 .container {
-  width: 960px;
+  width: calc(100% - 20px);
+  max-width: 960px;
   margin: 0 auto;
   position: relative;
   height: 100vh;
@@ -74,7 +75,8 @@ img {
   opacity: 0;
 }
 .statement {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -95,7 +97,8 @@ img {
   width: 100%;
 }
 .content {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   display: block;
   margin: 0 auto;
   padding-top: 100px;
@@ -124,7 +127,7 @@ div.project iframe.large {
 div.project img.small,
 div.project iframe.small {
   float: left;
-  width: calc((960px - 50px) / 2);
+  width: calc((100% - 50px) / 2);
 }
 div.project img.small:first-child,
 div.project iframe.small:first-child {
@@ -173,7 +176,8 @@ div.back-menu {
   }
   .statement,
   .content {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     font-size: 12px;
   }
   .left-menu {
@@ -192,7 +196,8 @@ div.back-menu {
   }
   .statement,
   .content {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     font-size: 16px;
   }
   .left-menu p.menu {
@@ -205,6 +210,11 @@ div.back-menu {
 @media screen and (max-width: 500px) {
   .container {
     width: calc(100% - 20px);
+  }
+  .statement,
+  .content {
+    width: 100%;
+    max-width: none;
   }
 }
 @-moz-keyframes appear {
