@@ -110,6 +110,7 @@ div.project
     margin-top 10px
   img, iframe
     margin-top 50px
+    max-width 960px
     &.large
       width 100%
     &.small
@@ -118,7 +119,7 @@ div.project
       &:first-child
         margin-right 50px
     &.vert
-      width 670px
+      width 70%
       margin-left auto
       margin-right auto
       display block
@@ -129,10 +130,12 @@ div.project
     margin 55px 0 0 0
   audio
     margin-top 20px
-    width 670px
+    width 70%
+    max-width 670px
   .audio-centered
     margin-top 20px
-    width 670px
+    width 70%
+    max-width 670px
     margin 0 auto
 
 div.back-menu
@@ -186,3 +189,6 @@ div.back-menu
   .statement, .content
     width 100%
     max-width none
+  .project
+    img:first-child
+      margin-top 0

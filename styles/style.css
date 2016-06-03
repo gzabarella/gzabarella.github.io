@@ -119,6 +119,7 @@ div.project div.row {
 div.project img,
 div.project iframe {
   margin-top: 50px;
+  max-width: 960px;
 }
 div.project img.large,
 div.project iframe.large {
@@ -135,7 +136,7 @@ div.project iframe.small:first-child {
 }
 div.project img.vert,
 div.project iframe.vert {
-  width: 670px;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -149,11 +150,13 @@ div.project p.link {
 }
 div.project audio {
   margin-top: 20px;
-  width: 670px;
+  width: 70%;
+  max-width: 670px;
 }
 div.project .audio-centered {
   margin-top: 20px;
-  width: 670px;
+  width: 70%;
+  max-width: 670px;
   margin: 0 auto;
 }
 div.back-menu {
@@ -215,6 +218,9 @@ div.back-menu {
   .content {
     width: 100%;
     max-width: none;
+  }
+  .project img:first-child {
+    margin-top: 0;
   }
 }
 @-moz-keyframes appear {
