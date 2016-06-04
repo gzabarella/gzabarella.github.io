@@ -288,6 +288,14 @@ div.back-menu.mobile-back-menu {
     display: block;
   }
 }
+@media screen and (max-width: 500px) and (max-height: 550px) {
+  .statement {
+    top: 50px;
+    transform: none;
+    -moz-transform: none;
+    -webkit-transform: none;
+  }
+}
 @-moz-keyframes appear {
   0% {
     opacity: 0;
