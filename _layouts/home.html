@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<div class="hamburger">
+  <img src="/assets/images/hamburger.svg" id="open-menu" />
+</div>
+<div id="menu" class="left-menu appearing">
+  <img class="close" id="close-menu" src="/assets/images/close.svg" />
+  <p id="projects" class="menu active">
+    Works
+  </p>
+  <ul>
+    <li><a href="/works/architectonique-du-sens/">L’architectonique du sens</a></li>
+    <li><a href="/works/ogni-geografia-possibile/">Ogni geografia possibile</a></li>
+    <li><a href="/works/index-of-a-biography/">Index of a biography</a></li>
+    <li><a href="/works/mirror-lives/">Mirror Lives</a></li>
+    <li><a href="/works/spuren/">Spuren</a></li>
+    <li><a href="/works/i-have-come-here-to-meet-you/">I have come here to meet you</a></li>
+    <li><a href="/works/di-alcuna-importanza/">[..] di alcuna importanza</a></li>
+    <li>&nbsp;</li>
+    <li style="font-weight: normal"><a href="/works/sketchbooks/">Sketchbooks</a></li>
+    <li>&nbsp;</li>
+    <li style="font-style: italic"><a href="/works/algorithm-of-my-life/">Algorithm of my life</a></li>
+    <li style="font-style: italic"><a href="/works/quality-time/">Quality Time</a></li>
+  </ul>
+
+  <p id="about" class="menu">
+    <a href="/cv/">CV</a>
+  </p>
+  <p id="contacts" class="menu">
+    <a href="/contacts/">Contacts</a>
+  </p>
+</div>
+<div class="container">
+  <div class="statement">
+    <p>&laquo;Soltanto ciò che all’inizio fu capace di dissimularsi può apparire. Le cose di cui cogliamo subito l’aspetto, quelle che somigliano, tranquillamente, non appaiono mai.&raquo;</p>
+    <p id="author">Georges Didi-Huberman</p>
+
+    <img src="/assets/images/index.jpg" alt="{% if page.title %}{{ page.title | escape }}{% endif %}" />
+  </div>
+</div>

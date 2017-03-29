@@ -1,0 +1,32 @@
+title: Giulia Zabarella - Index of a biography
+short_title: Giulia Zabarella
+email: gzabarella@gmail.com
+description: "Giulia Zabarella is an art student living between Padua, Milan and Munich. She currently studies at Akademie der Bildenden Künste in Munich."
+url: "http://indexofabiography.eu"
+google_analytics: "UA-84365905-1"
+
+collections:
+ works:
+  permalink: /:collection/:title/
+  output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "works"
+    values:
+      layout: post
+      categories: works
+
+# Build settings
+markdown: kramdown
+stylus:
+  compress: true
+  path: assets/styles
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
