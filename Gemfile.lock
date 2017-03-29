@@ -201,7 +201,6 @@ DEPENDENCIES
   github-pages (= 130)
   jekyll-redirect-from
   jekyll-sitemap
-  json
   stylus
   tzinfo-data
 
