@@ -1,24 +1,6 @@
 ---
 layout: default
 ---
-<div class="back-menu mobile-back-menu">
-  <a href="/#nav">&#8592; Back</a>
-</div>
-
-<div class="left-menu">
-  <p id="projects" class="menu">
-    <a href="/#nav">Works</a>
-  </p>
-  <p id="about" class="menu{%if page.permalink == "/cv/" %} active{% endif %}">
-    <a href="/cv/">CV</a>
-  </p>
-  <p id="contacts" class="menu{%if page.permalink == "/contacts/" %} active{% endif %}">
-    <a href="/contacts/">Contacts</a>
-  </p>
-</div>
-
-<div class="container">
-  <div class="content">
-    {{ content }}
-  </div>
+<div class="page">
+{{ content }}
 </div>
