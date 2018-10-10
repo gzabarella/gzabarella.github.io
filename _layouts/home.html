@@ -17,8 +17,8 @@
     <div class="swiper-container">
       <div class="swiper-wrapper">
         {% for work in site.works %}
-          <div class="swiper-slide">
-            <div class="image-container" style="background-image: url('{{ work.cover_image }}')" onclick="openWork('{{ work.slug }}')"></div>
+          <div class="swiper-slide" data-hash="{{ work.slug }}">
+            <div class="image-container" style="background-image: url('{{ work.carousel_image }}')" onclick="openWork('{{ work.slug }}')"></div>
             <h3>{{ work.title }}</h3>
           </div>
         {% endfor %}
@@ -35,6 +35,7 @@
       var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 0,
+        hashNavigation: true,
         simulateTouch: false,
         loop: true,
         navigation: {
@@ -44,7 +45,7 @@
       });
 
       openWork = function(slug) {
-          window.location.href = 'works/' + slug;
+        window.location.href = 'works/' + slug;
       }
     </script>
   </body>
