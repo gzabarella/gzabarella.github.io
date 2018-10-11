@@ -1,0 +1,228 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #fff;
+  font-family: Futura, Arial, sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #121212;
+  margin: 0;
+  padding: 0;
+}
+b {
+  font-weight: 500;
+}
+
+div.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  height: auto;
+  z-index: 100;
+  padding: 0px 14px;
+  font-size: 1.1em;
+  letter-spacing: 0.2px;
+}
+
+div.title h1 {
+  /* font-weight: 300; */
+  text-transform: uppercase;
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+div.title nav a,
+div.title nav a:visited,
+div.title nav a:active {
+  color: inherit;
+  text-decoration: none;
+}
+div.title nav a:hover {
+  background-color: #fcf805;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  padding: 11vh 10vw;
+  box-sizing: border-box;
+
+  /* Center slide text vertically */
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center; */
+}
+
+.swiper-slide .image-container {
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: contain;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.page {
+  padding: 32px 48px;
+  letter-spacing: 0.2px;
+  font-size: 1.1em;
+}
+
+.page h3 {
+  margin-block-start: 2.5em;
+  margin-block-end: 1.5em;
+}
+
+.page p {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.page hr {
+  border: none;
+  height: 2px;
+}
+
+.page a.color {
+  color: blue;
+}
+
+div.presentation {
+  padding: 32px 48px;
+  font-size: 1.1em;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+div.presentation h1 {
+  margin-block-start: 28px;
+  margin-block-end: 0.67em;
+  width: 50%;
+}
+div.presentation h1 span {
+  font-weight: 300;
+  display: block;
+  font-style: normal;
+  font-size: 0.6em;
+}
+
+div.presentation div.technique {
+  font-weight: 300;
+  display: block;
+  font-style: normal;
+  width: 50%;
+}
+
+div.presentation div.brief {
+  margin-top: 48px;
+  width: 48%;
+  z-index: 100;
+  position: relative;
+  box-sizing: border-box;
+}
+
+div.presentation img {
+  position: absolute;
+  top: 60px;
+  right: 48px;
+  height: calc(100vh - 60px - 32px);
+}
+
+div.content {
+  padding: 0 48px 32px 48px;
+  font-size: 1.1em;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+div.content img {
+  margin: 0 0 32px 0;
+  max-height: 100vh;
+  box-sizing: border-box;
+}
+
+div.content div.right {
+  text-align: right;
+}
+
+div.content div.center {
+  text-align: center;
+}
+
+div.content div.double img {
+  width: 40%;
+  margin: 0 16px 32px 16px;
+}
+
+div.back {
+  width: 18px;
+  height: 18px;
+  background-image: url("/assets/icons/back.svg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: contain;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  float: left;
+}
+
+p.footnote {
+  padding: 16px 48px 16px 48px;
+  font-size: 0.8em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.audio-centered {
+  margin: 0 auto 32px auto;
+  width: 670px;
+  max-width: 100%;
+}
+
+.audio-centered audio {
+  width: 100%;
+}

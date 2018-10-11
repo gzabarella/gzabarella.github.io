@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="presentation">
+  <div class="back" title="go back" onclick="window.history.back()"></div>
+  <h1>
+    {{ page.title }}
+    <span>{{ page.year }}</span>
+  </h1>
+  <div class="technique">
+    {{ page.technique }}
+  </div>
+  <div class="brief">
+    {{ page.brief }}
+  </div>
+  <img src="{{ page.main_image }}" />
+</div>
+
+<div class="content">
+  {{ content }}
+</div>
