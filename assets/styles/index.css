@@ -102,6 +102,8 @@ div.title nav a:hover {
   padding: 32px 48px;
   letter-spacing: 0.2px;
   font-size: 1.1em;
+  min-height: calc(100vh - 45px);
+  box-sizing: border-box;
 }
 
 .page h3 {
@@ -207,7 +209,9 @@ div.back {
   -o-user-select: none;
   user-select: none;
   cursor: pointer;
-  float: left;
+  position: fixed;
+  top: 16px;
+  left: 16px;
 }
 
 p.footnote {
@@ -218,11 +222,16 @@ p.footnote {
 }
 
 .audio-centered {
-  margin: 0 auto 32px auto;
+  margin: 0 auto 0 auto;
   width: 670px;
   max-width: 100%;
 }
 
 .audio-centered audio {
   width: 100%;
+  margin-bottom: 32px;
+}
+
+.center video {
+  margin-bottom: 32px;
 }
