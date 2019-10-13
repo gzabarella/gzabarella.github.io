@@ -214,6 +214,16 @@ div.back {
   left: 16px;
 }
 
+.fixed-title {
+  position: fixed;
+  top: 32px;
+  left: 48px;
+}
+
+.fixed-title-clear {
+  
+}
+
 p.footnote {
   padding: 16px 48px 16px 48px;
   font-size: 0.8em;
