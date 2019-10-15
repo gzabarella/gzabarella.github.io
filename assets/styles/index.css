@@ -24,7 +24,7 @@ div.title {
   box-sizing: border-box;
   height: auto;
   z-index: 100;
-  padding: 0px 14px;
+  padding: 0 48px;
   font-size: 1.1em;
   letter-spacing: 0.2px;
 }
@@ -210,18 +210,18 @@ div.back {
   user-select: none;
   cursor: pointer;
   position: fixed;
-  top: 16px;
+  top: 31px;
   left: 16px;
 }
 
 .fixed-title {
   position: fixed;
-  top: 32px;
+  top: 0;
   left: 48px;
 }
 
 .fixed-title-clear {
-  
+  margin: 0;
 }
 
 p.footnote {
