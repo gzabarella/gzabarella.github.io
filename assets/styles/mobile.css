@@ -45,4 +45,9 @@
   span.year-align {
     display: block;
   }
+
+  div.cv p {
+    padding-left: 0px;
+    text-indent: 0px;
+  }
 }

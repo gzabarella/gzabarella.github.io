@@ -252,5 +252,11 @@ p.footnote {
 /* used in cv page to align the years of the education*/
 span.year-align {
   display: inline-block;
-  min-width: 90px;
+  min-width: 100px;
+  text-indent: 0px;
+}
+
+div.cv p {
+  padding-left: 100px;
+  text-indent:-100px;
 }
