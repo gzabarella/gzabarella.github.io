@@ -15,7 +15,7 @@
 
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        {% for work in site.works %}
+        {% for work in site.works reversed %}
           <div class="swiper-slide" data-hash="{{ work.slug }}">
             <div class="image-container" style="background-image: url('{{ work.carousel_image }}')" onclick="openWork('{{ work.slug }}')"></div>
             <h3>{{ work.title }}</h3>
