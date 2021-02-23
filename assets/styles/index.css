@@ -245,3 +245,9 @@ p.footnote {
 .center video {
   margin-bottom: 32px;
 }
+
+/* used in cv page to align the years of the education*/
+span.year-align {
+  display: inline-block;
+  min-width: 90px;
+}

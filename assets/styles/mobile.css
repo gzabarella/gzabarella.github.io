@@ -41,4 +41,8 @@
   div.page {
     padding: 18px 36px;
   }
+
+  span.year-align {
+    display: block;
+  }
 }
