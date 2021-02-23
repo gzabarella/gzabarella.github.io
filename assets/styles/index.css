@@ -180,6 +180,9 @@ div.content img {
   max-height: 100vh;
   box-sizing: border-box;
 }
+div.content img.small {
+  width: 50%;
+}
 
 div.content div.right {
   text-align: right;
