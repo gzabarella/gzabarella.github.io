@@ -175,7 +175,7 @@ div.content {
   box-sizing: border-box;
 }
 
-div.content img {
+div.content img, div.content iframe {
   margin: 0 0 32px 0;
   max-height: 100vh;
   box-sizing: border-box;
