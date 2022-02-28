@@ -180,8 +180,14 @@ div.content img, div.content iframe {
   max-height: 100vh;
   box-sizing: border-box;
 }
+
 div.content img.small {
   width: 50%;
+}
+
+div.content div.spacer {
+  height: 250px;
+  display: block;
 }
 
 div.content div.right {
@@ -195,6 +201,12 @@ div.content div.center {
 div.content div.double img {
   width: 40%;
   margin: 0 16px 32px 16px;
+}
+
+div.content div.four img {
+  width: 20%;
+  margin: 0 16px 32px 16px;
+  vertical-align: top;
 }
 
 div.back {
